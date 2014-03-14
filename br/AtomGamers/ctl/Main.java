@@ -40,8 +40,8 @@ public class Main extends JavaPlugin implements Listener,CommandExecutor{
         getCommand("cores").setExecutor(this);
         ENABLED=true;
         StartCheck();
-        sender.sendMessage("§f[§bColored Tab List§f] Plugin inicializado. (Autor=AtomGamers)");
-        sender.sendMessage("§f[§bColored Tab List§f] Sistema de checagem foi ativado por *Console*");
+        sender.sendMessage("§f[§bxTabColors§f] Plugin inicializado. (Autor=AtomGamers)");
+        sender.sendMessage("§f[§bxTabColors§f] Sistema de checagem foi ativado por *Console*");
     }
     
     @Override
@@ -49,8 +49,8 @@ public class Main extends JavaPlugin implements Listener,CommandExecutor{
     {
         ConsoleCommandSender sender = Bukkit.getConsoleSender();
         ENABLED=false;
-        sender.sendMessage("§f[§bColored Tab List§f] Plugin finalizado. (Autor=AtomGamers)");
-        sender.sendMessage("§f[§bColored Tab List§f] Sistema de checagem foi desabilitado por *Console*");
+        sender.sendMessage("§f[§bxTabColors§f] Plugin finalizado. (Autor=AtomGamers)");
+        sender.sendMessage("§f[§bxTabColors§f] Sistema de checagem foi desabilitado por *Console*");
     }
     
     public void Update(final Player sender)
@@ -244,9 +244,9 @@ public class Main extends JavaPlugin implements Listener,CommandExecutor{
         if(e.getPlayer().hasPermission("ctab.admin"))
         {
             Player sender = e.getPlayer();
-            sender.sendMessage("§b[Colored Tab List] §fNotificação sobre UPDATE'S no Plugin:");
-            sender.sendMessage("§b[Colored Tab List] §fAcesse www.atomgamers.com/index.php?/");
-            sender.sendMessage("§b[Colored Tab List] §fProcure pelo plugin 'Colored Tab List'");
+            sender.sendMessage("§b[xTabColors] §fNotificação sobre UPDATE'S no Plugin:");
+            sender.sendMessage("§b[xTabColors] §fAcesse www.atomgamers.com/index.php?/");
+            sender.sendMessage("§b[xTabColors] §fProcure pelo plugin 'xTabColors'");
         }
     }
     
@@ -309,7 +309,7 @@ public class Main extends JavaPlugin implements Listener,CommandExecutor{
             {
                 if(args.length==0)
                 {
-                    sender.sendMessage("§b[Colored Tab List] §fUse /ctab <ustatus>");
+                    sender.sendMessage("§b[xTabColors] §fUse /ctab <ustatus>");
                 }
                 else if(args[0].equalsIgnoreCase("ustatus"))
                 {
@@ -317,10 +317,10 @@ public class Main extends JavaPlugin implements Listener,CommandExecutor{
                     {
                         Update(Players);
                     }
-                    sender.sendMessage("§b[Colored Tab List] §fStatus do TAB foi atualizado.");
+                    sender.sendMessage("§b[xTabColors] §fStatus do TAB foi atualizado.");
                 }
             }else{
-                sender.sendMessage("§b[Colored Tab List] §cVocê não tem permissão.");
+                sender.sendMessage("§b[xTabColors] §cVocê não tem permissão.");
             }
         }
         return false;
