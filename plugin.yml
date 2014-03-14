@@ -1,0 +1,7 @@
+name: Coloured Tab List
+version: 1.1.0
+main: br.AtomGamers.ctl.Main
+commands:
+  cores:
+    description: Comandos do Plugin!
+    aliases: [colors]
